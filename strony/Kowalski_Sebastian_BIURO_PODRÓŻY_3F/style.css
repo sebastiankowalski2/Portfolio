@@ -1,0 +1,291 @@
+*{
+    font-family:Verdana, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    
+}
+
+@font-face{
+    font-family: "Podkova";
+    src: url("FONTS/Podkova.ttf");
+}
+
+#kontener{
+    background-color: rgb(233,234,236);
+    background-color: rgb(250,240,231);
+    width: 65%;
+    margin: 0 auto;
+    
+}
+
+header{
+    font-family: "Podkova";
+    z-index: 2;
+    height: 200px;
+    background-color: rgb(182,209,228);
+    background-color: rgb(255,196,136);
+}
+
+p#le{
+    position: relative;
+    top: 100px;
+    text-align: center;
+    font-size: 40px;
+    
+}
+
+div.o{
+    margin: 0 auto;
+    height: 800px;
+    width: 1100px;
+    margin: 0 auto;
+    
+}
+
+img.guz{
+    height: 47px;
+    width: 46px;
+    
+}
+
+button.guzik{
+    position: relative;
+    left: 45%;
+    height: 50px;
+    width: 50px;
+    
+}
+
+img#zdj{
+    margin-left: 50px;
+    height: 700px;
+    width: 1000px;
+    box-shadow: 0px 0px 10px 5px;
+    padding: 0;
+}
+
+div#kol{
+    
+    height: 700px;
+    width: 1000px;
+    box-shadow: 0px 0px 10px 5px;
+}
+
+p#data{
+    
+    font-size: 50pt;
+    
+}
+
+div.tr{
+    
+    display: inline-flex;
+    
+}
+
+div#for p{
+    
+    font-size: 15pt;
+    
+}
+
+div#for td{
+    
+    width: 170px;
+    height: 30px;
+}
+
+.gal{
+    
+    box-shadow: 0px 0px 10px 5px;
+    height: 400px;
+    width: 550px;
+    margin-left: 70px;
+    margin-top: 100px;
+}
+
+.prz{
+    
+    height: 30px;
+    width: 70px;
+    
+}
+
+div#for{
+    margin-top: 180px;
+    padding-top: 40px;
+    height: 300px;
+    width: 500px;
+    box-shadow: 0px 0px 10px 5px;
+    
+}
+
+p.z{
+    text-align: justify;
+    font-size: 25px;
+    
+}
+
+p.t{
+    text-align: justify;
+    font-size: 25px;
+    
+}
+
+img#e{
+    box-shadow: 0px 0px 10px 5px;
+    height: 500px;
+    width: 800px;
+    position: relative;
+    left:100px;
+    top:50px;
+}
+
+.ind{
+    
+    height: 300px;
+    width: 400px;
+    float:right; 
+    margin: 30px;
+    box-shadow: 0px 0px 10px 5px;
+}
+
+h2#wak{
+    font-family: "Podkova";
+    font-size: 47pt;
+    
+}
+
+div.waka{
+    
+    width: 100%;
+    height: 200px;
+    color:red;
+}
+
+.c{
+    
+    height: 50px;
+    width: 50px;
+    position: absolute; 
+    top:55px;
+    left: 780px;
+}
+
+#obr{
+    
+    height: 800px;
+    width: 100%;
+    margin-left: 0%;
+}
+
+body{
+    
+    background-color: rgb(233,234,236);
+    background-color: rgb(247,231,210);
+    
+}
+
+nav{
+    position: relative;
+    top:75px;
+    float:right;
+    
+}
+
+.logo{
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 150px;
+    width: 250px;
+    
+}
+
+main{
+    padding: 75px;
+    min-height: 1300px;
+    
+}
+
+main.gale{
+    
+    min-height: 2700px;
+}
+
+main.pro{
+    
+    min-height: 900px;
+    
+}
+
+main.kon{
+    
+    min-height: 849px;
+    
+}
+
+ul{
+    
+    display:inline;
+    list-style-type: none;
+    
+}
+
+li{
+    
+    display:inline;
+    margin-right:30px;
+}
+
+a{
+    font-size: 30px;
+    color:black;
+    text-decoration: none;
+    
+}
+
+.ofer1{
+    margin-right: 65px;
+    display: inline-block;
+    height: 230px;
+    width: 350px;
+    background-color: black;
+    
+}
+
+.ofer2{
+    margin-right: 65px;
+    display: inline-block;
+    height: 230px;
+    width: 350px;
+    background-color: black;
+    
+}
+
+.ofer3{
+    margin-right: 0px;
+    display: inline-block;
+    height: 230px;
+    width: 350px;
+    background-color: black;
+    
+}
+
+.glowny{
+    position: relative;
+    z-index: 1;
+    height: 450px;
+    width: 100%;
+}
+
+footer{
+    font-family: "Podkova";
+    padding-top: 20px;
+    padding-left:500px;
+    background-color: rgb(182,209,228);
+    background-color: rgb(255,196,136);
+    min-height: 50px;
+    position: relative;
+    top: 100%;
+    
+}

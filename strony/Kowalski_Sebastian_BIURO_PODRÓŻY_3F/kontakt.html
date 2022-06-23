@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+
+<head>
+    
+<meta name="author" content="Sebastian Kowalski">
+<meta charset="utf-8">
+<link rel="icon" href="IMAGES/logo.png">
+<link rel="stylesheet" href="style.css">
+    
+<title> BIURO PODRÓŻY - BLISKI WSCHÓD </title>
+
+</head>
+
+<body>
+    
+<div id="kontener">
+    
+<header>
+    
+    <a href="index.html"><img src="IMAGES/logo.png" alt="logo" class="logo"></a>
+    
+    <div class="c">
+            
+        <p id="data"></p>
+        
+            <script>
+                
+                function c(){
+                    
+                var data = new Date();
+                    
+                var a = data.toLocaleTimeString();
+                    
+                document.getElementById("data").innerHTML = a;
+                    
+                }
+                
+                c();
+                
+                setInterval('c()', 1000);
+                
+            </script>
+        
+        </div>
+    
+<nav>
+    
+    <ul>
+    
+    <li><a href="promocje.html">PROMOCJE</a></li>
+    <li><a href="oferty.html">OFERTY</a></li>
+    <li><a href="galeria.html">GALERIA</a></li>
+    <li><a href="kontakt.html">KONTAKT</a></li>
+        
+    </ul>
+    
+</nav>
+    
+</header>
+   
+<main class="kon">
+    
+    <br><br>
+    
+    <script>
+            
+            function e(){
+                
+            var czy_imie = /^[a-zA-ZąęóźżłśćńĄĘÓŻŹŁŚĆŃ]{2,}$/;
+            var imie = document.getElementById("imie").value;
+            var i_imie = imie.search(czy_imie);
+
+            if (i_imie == -1){
+                alert("Wpisz poprawnie imie");
+            }
+
+
+            var czy_nazwisko = /^[a-zA-ZąęóźżłśćńĄĘÓŻŹŁŚĆŃ]{2,}$/;
+            var nazwisko = document.getElementById("nazwisko").value;
+            var i_nazwisko = nazwisko.search(czy_nazwisko);
+
+            if (i_nazwisko == -1){
+                alert("Wpisz poprawnie nazwisko");
+            }
+
+            var czy_mail = /\S+[@]\S+\.[a-z]{2,3}$/;
+            var mail = document.getElementById("email").value;
+            var i_mail = mail.search(czy_mail);
+            
+            if(i_mail == -1){
+                
+                alert("Wpisz poprawny mail!");
+                
+            }
+                
+            var czy_tel = /^\d{9}$/;
+            var tel = document.getElementById("tel").value;
+            var i_tel = tel.search(czy_tel);
+
+            if(i_tel == -1){
+                alert("Wpisz poprawny numer telefonu");
+            }
+                 
+            }
+        
+        </script>
+    
+    <div id="for">
+    
+    <form action="takui@takui.pl" method="get">
+        
+        <table>
+            
+        <tr>
+        <td><p>IMIE: </p></td>    
+        <td>
+        <input type="text" name="Imie" id="imie" placeholder="imie" required> 
+        </td>    
+        </tr>
+            
+        <tr>
+        <td><p>NAZWISKO: </p></td>    
+        <td>
+        <input type="text" name="Nazwisko" id="nazwisko" placeholder="nazwisko" required>
+        </td>
+        </tr>
+         
+        <tr>
+        <td><p>EMAIL: </p></td>    
+        <td>
+        <input type="text" name="Email" id="email" placeholder="email" required>
+        </td>    
+        </tr>
+            
+        <tr>
+        <td><p>NR. TEL: </p></td>    
+        <td>
+        <input type="number" name="tel" id="tel" placeholder="nr. tel" required>
+        </td>    
+        </tr>
+        
+        <tr>
+        <td><p>DATA: </p></td>    
+        <td>
+        <input type="date" name="data" id="data" placeholder="data" required>
+        </td>    
+        </tr>
+        
+        <tr>
+        <td><p>ILOŚĆ DNI: </p></td>    
+        <td>
+        <input type="number" name="ile" id="ilosc" placeholder="ilość dni" required>
+        </td>    
+        </tr>
+         
+        <tr>
+        <td><p>WYBIERZ KRAJ: </p></td>    
+        <td>
+    <select name="kraj">
+          
+        <option id="armenia"> Armenia </option>
+        <option id="iran"> Iran </option>
+        <option id="izrael"> Izrael </option>
+        <option id="egipt"> Egipt </option>
+        <option id="cypr"> Cypr </option>
+          
+    </select>
+        </td>    
+        </tr> 
+            
+        <tr> 
+               
+        <td>
+        <input type="submit" value="Wyslij" class="prz" onclick="e();">
+        </td> 
+            
+        <td>
+        <input type="reset" class="prz" value="Wyczyść">            
+        </td>
+        
+        </tr>
+            
+            </table>
+            
+          </form> 
+        
+    </div>
+    
+</main>
+    
+    <footer>
+    
+        <p class="z"> &copy; Copyright 2021 Sebastian Kowalski 3F ZSE</p>
+    
+    </footer>
+    
+</div>
+        
+</body>
+
+</html>

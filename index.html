@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sebastian Kowalski">
+    <title>Portfolio | Sebastian Kowalski</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <header class="sticky-top">
+                    
+        <nav class="navbar navbar-dark bg-dark navbar-expand-xl">
+            <a href="#" class="navbar-brand loggg ms-5">Sebastian Kowalski</a>
+            <button class="navbar-toggler me-2" data-bs-toggle="collapse" data-bs-target="#mainmenu" type="button" aria-controls="mainmenu" aria-expanded="false" aria-label="mainmenu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse " id="mainmenu">
+
+                <ul class="navbar-nav ms-auto fs-5">
+
+                    <li class="nav-item active me-5">
+                        <a class="nav-link" href="#"> Home </a>
+                    </li>
+
+                    <li class="nav-item me-5">
+                        <a class="nav-link" href="#about"> About me </a>
+                    </li>
+
+                    <li class="nav-item me-5">
+                        <a class="nav-link" href="#technology"> Technologies </a>
+                    </li>
+
+                    <li class="nav-item me-5">
+                        <a class="nav-link" href="#portfolio"> Portfolio </a>
+                    </li>
+
+                    <li class="nav-item me-5">
+                        <a class="nav-link" href="#photoshop"> Photoshop </a>
+                    </li>
+
+                    <li class="nav-item me-5">
+                        <a class="nav-link" id="but" onclick="changeStatus()"> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-brightness-high" viewBox="0 0 16 16">
+                            <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+                          </svg></a>
+                    </li>
+
+                    <script>
+                       
+                        const but = document.getElementById("but")
+
+                        
+                        if (localStorage.getItem('darkMode')===null){
+                            localStorage.setItem('darkMode', "false");
+                        }
+
+                        checkStatus()
+
+                        function checkStatus(){
+                            if (localStorage.getItem('darkMode')==="true"){
+
+                                document.body.style.color = "#FFF";
+                                document.body.style.backgroundColor = "#181A1B";
+                            }else{
+                                
+                                document.body.style.color = "#181A1B";
+                                document.body.style.backgroundColor = "#FFF";
+                            }
+                        }
+
+                        function changeStatus(){                                            
+                            if (localStorage.getItem('darkMode')==="true"){
+                                localStorage.setItem('darkMode', "false");
+                                                
+                                document.body.style.color = "#181A1B";
+                                document.body.style.backgroundColor = "#FFF";
+                            } else{
+                                localStorage.setItem('darkMode', "true");
+                                document.body.style.color = "#FFF";
+                                document.body.style.backgroundColor = "#181A1B";
+                            }
+                        }
+
+                    </script>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main>
+        
+        <div class="container">
+            
+            <section>
+
+                <h1 class="h1 mt-4 mb-5">Home Page</h1>
+                <p class="fs-5 fs-md-1 home">Hi! You are currently on my PORTFOLIO website. Below is some information about the technologies I use to create websites, my old projects, a few projects from the photoshop course, and some information about me.</p>
+            
+            <div id="about" class="row wieksze2">
+                <hr class="mt-5"> 
+                <div class="col-md-8 col-sm-12">
+
+                    <h1 class="h1 mb-5 mt-5">About Me</h1>
+
+                    <h3 class="h3">Sebastian Kowalski </h3>
+                    <p class="fs-5 fs-md-1 czci">A graduate of the prestigious Secondary School of Energy and Electronics No. 9 in Krakow with a qualification in computer science. A person willing to learn programming and expand his knowledge of computer science. Fascinated by creating websites.</p>
+
+                </div>
+                    
+                    <aside class="col-md-4 col-sm-12 mt-4">
+
+                        <img class="img-fluid d-block mx-auto float-end img-thumbnail" src="img/Kowalski.JPG">
+            
+                    </aside>
+            </div>
+
+            <div id="technology" class="row wieksze">
+
+                    <hr class="mt-5">    
+
+                    <h1 class="h1 text-center mb-5 mt-5">Technologies</h1>
+
+                <div class="row techn">
+                
+                    <div class="col-md-2 col-sm-6 offset-md-1">
+                
+                        <figure>
+                            <img src="img/HTML.png" class="d-block mx-auto img-fluid zdj" alt="html-obrazek">
+                            <figcaption class="text-center">HTML</figcaption>
+                        </figure>
+                    
+                    </div>
+
+                    <div class="col-md-2 col-sm-6">
+                
+                        <figure>
+                            <img src="img/CSS.png" class="d-block mx-auto img-fluid zdj" alt="html-obrazek">
+                            <figcaption class="text-center">CSS</figcaption>
+                        </figure>
+                    
+                    </div>
+
+                    <div class="col-md-2 col-sm-6">
+                
+                        <figure>
+                            <img src="img/JS.jpg" class="d-block mx-auto img-fluid zdj" alt="html-obrazek">
+                            <figcaption class="text-center">JS</figcaption>
+                        </figure>
+                    
+                    </div>
+
+                    <div class="col-md-2 col-sm-6">
+                
+                        <figure>
+                            <img src="img/PS.jpg" class="d-block mx-auto img-fluid zdj" alt="html-obrazek">
+                            <figcaption class="text-center">Ps</figcaption>
+                        </figure>
+                    
+                    </div>
+
+                    <div class="col-md-2 col-sm-12">
+                
+                        <figure>
+                            <img src="img/BS5.png" class="d-block mx-auto img-fluid zdj" alt="html-obrazek">
+                            <figcaption class="text-center">BS5</figcaption>
+                        </figure>
+                    
+                    </div>
+
+                </div>
+
+            </div>
+
+                <!-- Portfolio -->
+
+                <div class="row wieksze" id="portfolio">
+
+                    <hr class="mt-5">
+
+                    <h1 class="h1 mb-5 text-center mt-5">Portfolio</h1>
+
+                    <div class="col-md-6 col-sm-6 col-lg-3 flash">
+                
+                        <figure>
+                            <a href="strony/bootstrap/index.html"><img src="img/skoki.png" class="fad d-block mx-auto img-thumbnail" alt="skoki"></a>
+                            
+                        </figure>
+                        
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 col-lg-3 flash">
+                
+                        <figure>
+                            <a href="strony/KOWALSKI_SEBASTIAN_3F_FILM2/index.html"><img src="img/film.png" class="d-block mx-auto img-thumbnail" alt="film"></a>
+                            
+                        </figure>
+                        
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 col-lg-3 flash">
+                
+                        <figure>
+                            <a href="strony/Kowalski_Sebastian_BIURO_PODRÓŻY_3F/index.html"><img src="img/biuro-podrozy.png" class="d-block mx-auto img-thumbnail" alt="biuro podrozy"></a>
+                            
+                        </figure>
+                        
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 col-lg-3 flash">
+                
+                        <figure>
+                            <a href="strony/NOWY ROK_DANE/index.html"><img src="img/obra.png" class="d-block mx-auto img-thumbnail" alt="nowy rok"></a>
+                            
+                        </figure>
+                        
+                    </div>
+
+                </div>
+
+            </section>
+
+            <div class="row wieksze2" id="photoshop">
+
+                <hr class="mt-5">
+
+                <h1 class="h1 text-center mb-5 mt-5">Photoshop</h1>
+
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner col-md-6 col-sm-6 col-lg-3">
+                      <div class="carousel-item active">
+                        <img src="img/napis.jpg" class="d-block w-100 obrazy-slajder" alt="napis obrazek">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/slonik.png" class="d-block w-100 obrazy-slajder" alt="słoń obrazek">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/twarz.png" class="d-block w-100 obrazy-slajder" alt="twarz obrazek">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+            </div>
+
+                <hr class="mt-5">
+            
+
+            <footer class=" text-center text-lg-start mb-4">
+                
+                <div class="container p-4">
+                    
+                    <div class="row">
+                    
+                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase mb-4">Contact</h5>
+                
+                        <p>
+                        Contact me here:
+                        </p>
+                        <p><span class="sp">sebastian.kowalski20020@gmail.com</span></p>
+                    </div>
+                
+                    <div class="col-lg-6 text-center col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Links</h5>
+                
+                        <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="https://github.com">Github</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/sebkjechlebk/">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="https://pl.linkedin.com">Linkedin</a>
+                        </li>
+                        <li>
+                            <a href="mailto:sebastian.kowalski20020@gmail.com" class="kont2">Email me!</a>
+                        </li>
+                        </ul>
+                    </div>
+                    
+                    </div>
+                    
+                </div>
+                
+                
+            </footer>
+
+        </div>
+   
+
+            <div class="bg-dark bial text-center p-3">
+                <p>Sebastian Kowalski © 2022 </p>
+                  
+                </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

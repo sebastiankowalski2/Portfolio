@@ -1,0 +1,202 @@
+*{
+
+    padding: 0;
+    margin: 0 auto;
+
+    font-family: light;
+
+}
+
+@font-face {
+    font-family: light;
+    src: url("FONTY/Geometria-Light.ttf");
+}
+
+@font-face {
+    font-family: grub;
+    src: url("FONTY/Geometria.ttf");
+}
+
+@font-face {
+    font-family: odr;
+    src: url("FONTY/Kunstler-Script.TTF");
+}
+
+header{
+
+    background-color: #16191E;
+    width:100%;
+    padding-top: 20px;
+    height: 130px;
+}
+
+.obra{
+
+    text-align: center;
+
+}
+
+a{
+
+    text-decoration: none;
+    color: #16191E;
+    font-variant: small-caps;
+    font-size: 15pt;
+    color: black;
+    font-family: grub;
+
+}
+
+nav{
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+li{
+    border: 3px solid orange;
+    border-radius: 9px;
+    padding: 10px;
+    margin-right: 10px;
+    display: inline;
+    list-style-type: none;
+
+}
+
+ul{
+
+    list-style-type: none;
+
+}
+
+main{
+
+    text-align: center;
+
+}
+
+.logoo{
+
+    width: 100px;
+    float: left;
+    height: 100px;
+}
+
+div.lewo{
+
+    width: 70%;
+    float: left;
+    box-sizing: border-box;
+
+}
+
+div.prawo{
+    
+    position: relative;
+    left: 30%;
+    top: -100px;
+    color: #EFEBDF;
+    width: 30%;
+    box-sizing: border-box;
+    
+}
+
+button{
+
+    background-color: #EFEBDF;
+    border: 1px solid #DF8D44;
+    margin-left: 10px;
+}
+
+button:hover{
+
+    background-color: #DF8D44; 
+}
+
+h1{
+    margin-top: 15px;
+    color: #EFEBDF;
+
+}
+
+li:hover{
+
+    color: white;
+    background-color: orange;
+
+}
+
+.ee{
+
+    margin-left: 15%;
+    box-sizing: border-box;
+    display: table;
+    clear: both;
+    text-align: center;
+}
+
+.jeden{
+    
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: 100px;
+    text-align: center;
+}
+
+span{
+
+    font-weight: bold;
+
+}
+
+.dwa{
+    
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: 100px;
+    text-align: center;
+}
+
+.trzy{
+    
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: 100px;
+    text-align: center;
+}
+
+h2{
+
+    color: #EFEBDF;
+    font-family: odr;
+
+}
+
+
+
+div{
+
+    display:inline-flexbox;
+
+}
+
+footer{
+
+background-color: #16191E;
+color: #EFEBDF;
+height: 80px;
+
+
+}
+
+footer p{
+    text-align: center;
+    width: 100%;
+    margin-top: 60px;
+    padding-top: 30px;
+    height: 200px;
+
+}

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+
+<head>
+    
+<meta name="author" content="Sebastian Kowalski">
+<meta charset="utf-8">
+<link rel="icon" href="IMAGES/logo.png">
+<link rel="stylesheet" href="style.css">
+    
+<title> BIURO PODRÓŻY - BLISKI WSCHÓD </title>
+
+</head>
+
+<body>
+    
+<div id="kontener">
+    
+<header>
+    
+    <a href="index.html"><img src="IMAGES/logo.png" alt="logo" class="logo"></a>
+    
+    <div class="c">
+            
+        <p id="data"></p>
+        
+            <script>
+                
+                function c(){
+                    
+                var data = new Date();
+                    
+                var a = data.toLocaleTimeString();
+                    
+                document.getElementById("data").innerHTML = a;
+                    
+                }
+                
+                c();
+                
+                setInterval('c()', 1000);
+                
+            </script>
+        
+        </div>
+    
+<nav>
+    
+    <ul>
+    
+    <li><a href="promocje.html">PROMOCJE</a></li>
+    <li><a href="oferty.html">OFERTY</a></li>
+    <li><a href="galeria.html">GALERIA</a></li>
+    <li><a href="kontakt.html">KONTAKT</a></li>
+        
+    </ul>
+    
+</nav>
+    
+</header>
+   
+<main>
+    
+    
+    <img class="glowny" src="IMAGES/iran.jpg" alt="head" id="obr">
+    
+    <script>
+    
+            var k = 0;
+            var ob = ["IMAGES/iran.jpg","IMAGES/izrael.jpg","IMAGES/armenia.jpg","IMAGES/egipt.jpg","IMAGES/cypr.jpg",]
+            
+            
+        function ban(){
+
+            k++;
+
+            if( k >= ob.length ){
+
+            k = 0;
+
+            }
+
+            document.getElementById("obr").src = ob[k];
+
+        }
+
+        setInterval("ban()", 2000);
+            
+    </script>
+    
+    
+    
+    <br><br>
+    
+    <div class="waka">
+        
+    <h2 id="wak"></h2>
+    
+        <script>
+
+            var data = new Date();
+            
+            var wakacje = new Date(2021,05,25);
+
+            var ile = wakacje - data;
+
+            var dni = (ile)/(1000*60*60*24);
+
+            document.getElementById("wak").innerHTML = "<br> DO WAKACJI POZOSTAŁO JUŻ TYLKO  "+dni.toFixed(0)+" DNI";
+
+        </script>
+
+    </div>
+        
+    <h1>O NAS:</h1>
+
+    <br>
+
+    <p class="z">
+        
+        Witamy na stronie www.takui.pl oraz dziękujemy za zainteresowanie naszą ofertą.
+
+        TAKUI to agencja turystyczna, która powstała z miłości do podróży, z chęci do poznawania świata i ludzi. Zawodowo z turystyką związani jesteśmy od 2008 roku, a od 2017 funkcjonujemy jako biuro podróży.
+
+        Chętnie pomożemy w wyborze idealnego urlopu. Nasza pasja do podróży to gwarancja idealnie dobranej oferty wakacyjnej. Wybór wakacji powinien być czymś przyjemnym, dlatego zapraszamy na rozmowę o wakacjach przy filiżance kawy (zachęcamy do wcześniejszego umawiania się na spotkanie).
+
+        W naszej ofercie mamy Podróże małe i duże. Współpracujemy z najlepszymi i sprawdzonymi touroperatorami w Polsce.
+
+        W szczególności polecamy:
+
+        wypoczynek pobytowy (samolot/dojazd własny/autokar)
+        wycieczki objazdowe
+        wyjazdy egzotyczne
+        wyjazdy narciarskie
+        obozy i kolonie
+        bilety lotnicze, autokarowe, wynajem samochodów, rezerwacja noclegów,
+        ubezpieczenia turystyczne (zdrowotne, z rozszerzeniem o choroby przewlekłe, od kosztów rezygnacji i inne).
+        Naszą misją jest zadowolenie klientów, pragniemy zmienić ich marzenia o wakacjach we wspomnienia. Tworzymy z klientami przyjacielską relację – nie jesteśmy typowymi sprzedawcami, dla których liczą się tylko wyniki i “sztywne standardy obsługi” – jesteśmy pasjonatami, dla których praca jest przyjemnością 
+    
+    </p>
+    
+    <br> <br>
+    
+    <div class="tr">
+    
+    <div class="trz">
+        
+        <br><br><br><br><br><br>
+        
+        <h1>Last minute</h1>
+        
+        <p class="t">
+                
+            Jesteś ostatnio przemęczony i nie możesz się skupić na pracy, a aura za oknem sprawia, że najchętniej przez cały dzień nie wychodziłbyś spod kołdry?
+            <img src="IMAGES/las.jpeg" class="ind" alt="last minute" style="float:right;">
+            Zamiast zastanawiać się, jak przetrwać i nie zwariować sprawdź jaką ofertę last minute przygotowało nasze biuro podróży!
+
+             
+            
+            Jeśli tylko możesz na kilka dni oderwać się od obowiązków, to teraz jest najlepszy czas na podróż, ponieważ mamy wiele ciekawych destynacji w bardzo atrakcyjnych cenach. Może zainteresuje Cię Chorwacja, Grecja lub Portugalia? Tam zawsze masz gwarancję dobrej pogody, a niezliczone atrakcje turystyczne sprawią, że każdy dzień pobytu będzie pełen wrażeń. Dodaj do tego pyszne, lokalne jedzenie i otrzymasz definicję idealnego urlopu.
+            Oferta last minute jest świetnym rozwiązaniem dla osób podchodzących do życia spontanicznie, które nie lubią tworzyć długoterminowych planów.
+
+            Czasami wystarczy tylko spakować kilka najpotrzebniejszych rzeczy i wyruszyć w podróż, która może stać się przygodą życia. Udany urlop wcale nie wymaga od Ciebie wielu miesięcy poszukiwań i zastanawiania się, gdzie i kiedy wyjechać. Od dawna marzysz o wyjeździe do Izraela czy Gruzji, ale zawsze się martwisz o finanse? Sprawdź naszą ofertę, bo teraz wyśnione wakacje są na wyciągnięcie ręki!
+
+        </p>
+        
+    </div>
+        
+    </div>
+        
+    <div class="trz">
+        
+        <br><br><br><br><br><br>
+        
+        <h1>Wycieczki objazdowe</h1>
+        
+        <p class="t">
+        
+            Wycieczki objazdowe
+            Lubisz poznawać nowe miejsca, podczas każdej podróży musisz zobaczyć wszystkie lokalne zabytki i ciekawostki, a siedzenie zbyt długo w jednym miejscu zwyczajnie 
+            <img src="IMAGES/sam.jpg" class="ind" alt samolot style="float:right;"> 
+            Cię nudzi? Jeśli lubisz zwiedzać i często zmieniać otoczenie, to wczasy typy all-inclusive z pewnością nie mieszczą się w Twojej definicji udanego urlopu. Mamy jednak coś, co może Cię zainteresować, ponieważ nasze biuro podróży organizuje wycieczki objazdowe do wielu ciekawych miejsc.
+
+            
+            
+            Z nami możesz odwiedzić Budapeszt i Zamki Siedmiogrodu, wybrać się do Rumunii szlakiem hrabiego Drakuli lub wyruszyć na Dalmatyńską Eskapadę do Chorwacji i Słowenii. W swojej ofercie mamy także wycieczki objazdowe dla wygodnych, podczas których przewidzianych jest więcej noclegów, grupy są mniejsze, a plan zwiedzania – mniej napięty. Opieka polskiego pilota, który jest świetnie zorientowany w lokalnych realiach sprawia, że poznajesz zwiedzane kraje „od podszewki”, masz szansę zobaczyć to, o czym nie piszą w przewodnikach.
+
+            Niezależnie od tego, czy wolisz włóczyć się po starych zamczyskach, relaksować się w parkach rozrywki czy poznawać kulturę i folklor odwiedzanych państw, u nas z pewnością znajdziesz wyjazd skrojony na miarę swoich potrzeb.
+
+            
+            
+        </p>
+        
+    </div>
+    
+    <br><br>
+    
+    <div class="trz">
+        
+        <br><br><br><br><br><br>
+        
+        <h1>All Inclusive</h1>
+        
+        <p class="t">
+            
+            
+            
+            Wyjazdy typu all inclusive są idealnym wyborem dla każdego turysty, zarówno dla singla podróżującego w pojedynkę, dużej rodziny z dziećmi, jak i dla par 
+            <img src="IMAGES/inc.jpg" class="ind" alt="all inclusive">
+            wybierających się na romantyczną wycieczkę we dwoje. Koszt takich wakacji, 
+            choć początkowo może wydawać się wysoki, obejmuje wszelkie wydatki - od podróży, przez pobyt w luksusowym hotelu, po wyżywienie, napoje i drinki. Pamiętaj, że nie ma żadnych międzynarodowych regulacji dokładnie określających, co wchodzi w zakres oferty all inclusive.
+ 
+            
+            Niektóre hotele wprowadzają pewne ograniczenia, dlatego szczegóły musisz zawsze sprawdzić przy wyborze konkretnej oferty. Wybierając tę formę urlopu, masz jednak pewność, że nic nie zakłóci Twojego spokoju, nie będziesz musiał zaprzątać sobie głowy żadnymi organizacyjnymi szczegółami. Musisz jedynie wybrać wymarzoną destynację, określić swój budżet i cieszyć się wakacjami.
+
+            Nasze biuro podróży oferuje wyjazdy all inclusive do miejsc ulubionych przez wielu turystów, które od lat znajdują się w czołówce wybieranych kierunków, takich jak Grecja, Egipt czy Tunezja. Możemy jednak zabrać Cię także w mniej oczywiste miejsca, między innymi do Albanii, Brazylii lub na Malediwy.
+
+        </p>
+        
+    </div>
+    
+    
+    
+</main>
+    <br><br>
+    <footer>
+    
+        <p class="z"> &copy; Copyright 2021 Sebastian Kowalski 3F ZSE</p>
+    
+    </footer>
+    
+</div>
+        
+</body>
+
+</html>

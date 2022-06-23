@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+
+<head>
+    
+<meta name="author" content="Sebastian Kowalski">
+<meta charset="utf-8">
+<link rel="icon" href="IMAGES/logo.png">
+<link rel="stylesheet" href="style.css">
+    
+<title> BIURO PODRÓŻY - BLISKI WSCHÓD </title>
+
+</head>
+
+<body>
+    
+<div id="kontener">
+    
+<header>
+    
+    <a href="index.html"><img src="IMAGES/logo.png" alt="logo" class="logo"></a>
+    
+    <div class="c">
+            
+        <p id="data"></p>
+        
+            <script>
+                
+                function c(){
+                    
+                var data = new Date();
+                    
+                var a = data.toLocaleTimeString();
+                    
+                document.getElementById("data").innerHTML = a;
+                    
+                }
+                
+                c();
+                
+                setInterval('c()', 1000);
+                
+            </script>
+        
+        </div>
+    
+<nav>
+    
+    <ul>
+    
+    <li><a href="promocje.html">PROMOCJE</a></li>
+    <li><a href="oferty.html">OFERTY</a></li>
+    <li><a href="galeria.html">GALERIA</a></li>
+    <li><a href="kontakt.html">KONTAKT</a></li>
+        
+    </ul>
+    
+</nav>
+    
+</header>
+   
+<main class="pro">
+    
+    <br><br>
+    <h1 style="text-align: center; font-size: 40pt; font-family: 'Podkova';">DZISIEJSZA PROMOCJA: </h1><br>
+    
+    <div id="kol">
+        
+    <img src="" id="e" alt="pro">
+    
+    <p id="le"></p>
+        
+    </div>
+    
+    <script>
+    
+            var tab = ["IMAGES/pro_iran.jpg","IMAGES/pro_izrael.jpg","IMAGES/pro_armenia.jpg","IMAGES/pro_egipt.jpg","IMAGES/pro_cypr.jpg",]
+            
+            
+        function pro(){
+        
+        var losf = Math.random()*5;
+        var los = Math.floor(losf);
+            
+        document.getElementById("e").src = tab[los];
+        
+        if(los == 0){
+            
+            document.getElementById("le").innerHTML = "Dzisiejsza promocja dotyczy kraju IRAN!";
+            document.getElementById("kol").style = "border: 10px solid rgb(205,38,213);";
+            document.getElementById("le").style = "color: rgb(205,38,213);";
+        }
+          
+        if(los == 1){
+            
+            document.getElementById("le").innerHTML = "Dzisiejsza promocja dotyczy kraju IZRAEL!";
+            document.getElementById("kol").style = "border: 10px solid rgb(33,228,217);";
+            document.getElementById("le").style = "color: rgb(33,228,217);";
+        }
+            
+        if(los == 2){
+            
+            document.getElementById("le").innerHTML = "Dzisiejsza promocja dotyczy kraju ARMENIA!";
+            document.getElementById("kol").style = "border: 10px solid rgb(245,94,13);";
+            document.getElementById("le").style = "color: rgb(245,94,13);";
+        }
+            
+        if(los == 3){
+            
+            document.getElementById("le").innerHTML = "Dzisiejsza promocja dotyczy kraju EGIPT!";
+            document.getElementById("kol").style = "border: 10px solid rgb(37,205,21);";
+            document.getElementById("le").style = "color: rgb(37,205,21);";
+        }
+            
+        if(los == 4){
+            
+            document.getElementById("le").innerHTML = "Dzisiejsza promocja dotyczy kraju CYPR!";
+            document.getElementById("kol").style = "border: 10px solid rgb(38,42,229);";
+            document.getElementById("le").style = "color: rgb(38,42,229);";
+        }
+            
+        }
+
+        pro();
+        
+    </script>
+    
+</main>
+    
+    <footer>
+    
+        <p class="z"> &copy; Copyright 2021 Sebastian Kowalski 3F ZSE</p>
+    
+    </footer>
+    
+</div>
+        
+</body>
+
+</html>

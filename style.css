@@ -1,0 +1,259 @@
+body{
+
+    background-color: black;
+    color: white;
+    
+}
+
+.loggg{
+
+    font-family: 'League Gothic', sans-serif;
+    font-size: 30pt;
+}
+
+a{
+
+    text-decoration: none;
+
+}
+
+.czci{
+
+   font-family: 'Source Code Pro', monospace;
+
+}
+
+ul{
+
+    list-style-type:none;
+    
+}
+
+.zdj{
+
+    width: 125px;
+
+}
+
+.flash figure:hover img {
+	opacity: 1;
+	animation: flash 1.5s;
+}
+
+@keyframes flash {
+	0% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.sp{
+
+    color: red;
+
+}
+
+.obr{
+
+    width: 350px;
+    height: 225px;
+
+}
+
+.bial{
+
+    color: white;
+    
+}
+
+.techn{
+
+    min-height: 200px;
+
+}
+
+hr{
+
+    width: 100%;
+    border-radius: 2px 4px;
+    border: 2px solid red;
+
+    background-color: red;
+
+}
+
+.h3{
+
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.home{
+
+    font-family: 'Roboto', sans-serif;
+
+}
+
+h1{
+
+    font-family: 'Kdam Thmor Pro', sans-serif;
+
+}
+
+.nav-link{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: white !important;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nav-link:hover{
+
+    color: red !important;
+    
+}
+
+.active{
+
+    color: red !important;
+
+}
+
+.zdjecie{
+
+width: 300px;
+
+}
+
+.sticky-top{
+
+    position: sticky !important;
+    top: 0;
+
+} 
+
+@media (min-width: 769px) {
+
+    
+.zdj:hover{
+
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+.wieksze{
+
+    min-height: 600px;
+
+}
+
+a.kont{
+
+    color: white;
+    text-decoration: none;
+}
+
+a.kont:hover{
+
+    color: lightgrey;
+
+}
+
+a.kont2{
+
+    color: red;
+    text-decoration: none;
+
+}
+
+a.kont2:hover{
+
+    color: #c40000;
+
+}
+
+.wieksze2{
+
+    min-height: 900px;
+
+}
+
+.obrazy-slajder{
+
+    width: 1000px;
+    height: 750px;
+
+}
+
+.zdj{
+
+    margin-top: 0px;
+    transition: 0.5s;
+}
+    
+    }
+
+/*  */
+
+@media (max-width: 459px) {
+
+.obrazy-slajder{
+
+    height: 200px;
+
+}
+    
+} 
+
+@media (min-width: 460px) and (max-width: 768px) {
+
+.techn{
+
+    min-height: 600px;
+
+}
+    
+.zdj:hover{
+
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.zdj{
+
+    padding: 0px;
+    transition: 0.5s;
+}
+
+.obrazy-slajder{
+
+    width: 400px;
+    height: 300px;
+
+}
+
+}
+
+@media (min-width:769px) and  (max-width: 992px) {
+
+.obrazy-slajder{
+
+    width: 600px;
+    height: 400px;
+
+}
+
+}
+
+@media (min-width:993px) and  (max-width: 1199px) {
+
+    .obrazy-slajder{
+    
+        width: 800px;
+        height: 600px;
+    
+    }
+    
+    }

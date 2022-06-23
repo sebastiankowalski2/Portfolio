@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+
+<head>
+    
+<meta name="author" content="Sebastian Kowalski">
+<meta charset="utf-8">
+<link rel="icon" href="IMAGES/logo.png">
+<link rel="stylesheet" href="style.css">
+    
+<title> BIURO PODRÓŻY - BLISKI WSCHÓD </title>
+
+</head>
+
+<body>
+    
+<div id="kontener">
+    
+<header>
+    
+    <a href="index.html"><img src="IMAGES/logo.png" alt="logo" class="logo"></a>
+    
+    <div class="c">
+            
+        <p id="data"></p>
+        
+            <script>
+                
+                function c(){
+                    
+                var data = new Date();
+                    
+                var a = data.toLocaleTimeString();
+                    
+                document.getElementById("data").innerHTML = a;
+                    
+                }
+                
+                c();
+                
+                setInterval('c()', 1000);
+                
+            </script>
+        
+        </div>
+    
+<nav>
+    
+    <ul>
+    
+    <li><a href="promocje.html">PROMOCJE</a></li>
+    <li><a href="oferty.html">OFERTY</a></li>
+    <li><a href="galeria.html">GALERIA</a></li>
+    <li><a href="kontakt.html">KONTAKT</a></li>
+        
+    </ul>
+    
+</nav>
+    
+</header>
+   
+<main class="pro">
+    
+    <br><br>
+        
+    <h1 style="text-align: center; font-size: 40pt; font-family: 'Podkova';">NASZE OFERTY:</h1>
+
+    <br>
+    
+    <div class="o">
+    
+    <img src="IMAGES/ofe_iran.jpg" id="zdj" alt="OFERTY">
+        
+        <br><br>
+            
+            <button class="guzik" onclick="galewo()"> <img class="guz" src="IMAGES/lewo-strzalka.jpg"> </button>
+            &nbsp;
+            &nbsp;
+            <button class="guzik" onclick="gaprawo()"> <img class="guz" src="IMAGES/prawo-strzalka.jpg"> </button>
+        
+        </div>
+        
+            <script>
+            
+                var x = 0;
+                var trab = ["IMAGES/ofe_iran.jpg", "IMAGES/ofe_armenia.jpg", "IMAGES/ofe_egipt.jpg", "IMAGES/ofe_cypr.jpg", "IMAGES/ofe_izrael.jpg"];
+                
+                function galewo(){
+                    
+                    x--;
+                    
+                    if(x < 0){
+                        
+                        x=trab.length-1;
+                        
+                    }
+                    
+                    document.getElementById("zdj").src = trab[x];
+                }
+                
+                function gaprawo(){
+                    
+                    x++;
+                    
+                    if(x >= trab.length){
+                        
+                        x = 0;
+                        
+                    }
+                    
+                    document.getElementById("zdj").src = trab[x];
+                }
+                
+            </script>
+    
+</main>
+    <br><br>
+    <footer>
+    
+        <p class="z"> &copy; Copyright 2021 Sebastian Kowalski 3F ZSE</p>
+    
+    </footer>
+    
+</div>
+        
+</body>
+
+</html>
